@@ -2,7 +2,6 @@
   <header>
     <div class="header">
       <img class="app-logo" src="@/assets/fancode-fc.png" />
-      <input class="search-field" placeholder="Search.." />
     </div>
   </header>
 </template>
@@ -10,28 +9,6 @@
 export default {
   data() {
     return {
-      genres: [
-        {
-          text: "All",
-          name: "all",
-        },
-        {
-          text: "Action",
-          name: "action",
-        },
-        {
-          text: "Comedy",
-          name: "comedy",
-        },
-        {
-          text: "All",
-          name: "all",
-        },
-        {
-          text: "All",
-          name: "all",
-        },
-      ],
     };
   },
 };

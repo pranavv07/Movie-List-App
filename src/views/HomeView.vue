@@ -1,8 +1,6 @@
 <template>
   <section class="home">
-    <!-- <component :is="MovieList"> -->
     <MovieList :movies="movies" :year="year" @load-data="loadMoreMovies()" />
-    <!-- </component> -->
   </section>
 </template>
 
@@ -16,8 +14,6 @@ export default {
   },
   data() {
     return {
-      moviesList: [],
-      genresList: [],
       year: 2012,
       page: 1,
     };
