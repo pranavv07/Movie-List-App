@@ -1,6 +1,11 @@
 <template>
   <section class="home">
-    <MovieList :movies="movies" :year="year" @load-data="loadMoreMovies()" />
+    <MovieList
+      :movies="movies"
+      :year="year"
+      @load-next-data="loadNextYearMovies()"
+    />
+    <!-- @load-prev-data="loadPrevYearMovies()" -->
   </section>
 </template>
 
@@ -29,9 +34,12 @@ export default {
     async getMovies() {
       await this.$store.dispatch("getMovies", this.year);
     },
-    async loadMoreMovies() {
+    async loadNextYearMovies() {
       await this.$store.dispatch("getMovies", ++this.year);
     },
+    // async loadPrevYearMovies() {
+    //   await this.$store.dispatch("getMovies", --this.year);
+    // },
     async getGenres() {
       await this.$store.dispatch("getGenres");
     },

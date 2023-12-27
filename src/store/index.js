@@ -6,6 +6,7 @@ const store = createStore({
     return {
       movies: [],
       genres: [],
+      filter: []
     };
   },
   mutations: {

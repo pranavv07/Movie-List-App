@@ -1,7 +1,7 @@
 <template>
   <nav>
     <div class="genres">
-      <button class="genre-btn" v-for="genre in genres" :key="genre.id">
+      <button @click="toggleGenre(genre)" class="genre-btn" v-for="genre in genres" :key="genre.id">
         {{ genre.name }}
       </button>
     </div>
@@ -16,6 +16,11 @@ export default {
   computed: {
     ...mapState(["genres"]),
   },
+  methods:{
+    toggleGenre(genre) {
+      console.log('event', genre);
+    }
+  }
 };
 </script>
 <style>

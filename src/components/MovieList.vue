@@ -17,7 +17,7 @@
             {{ movie.vote_average }}
           </div>
           <hr />
-           <div>
+          <div>
             <span class="bold-text">Genres:</span>
             <div
               v-for="(genre, index) in getGenresName(movie.genre_ids)"
@@ -55,7 +55,7 @@ export default {
         container.scrollTop + container.clientHeight >=
         container.scrollHeight
       ) {
-        this.$emit("load-data");
+        this.$emit("load-next-data");
       }
     },
     getPosterImg(path) {
