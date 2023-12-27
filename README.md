@@ -1,4 +1,17 @@
-# movie-list-app
+# movie-list-app 
+```
+This application shows the list of movies with infinite scroll.
+Project is setup in Vue Js.
+```
+
+# Tech Stack
+```
+Vue3
+VueRouter
+HTML
+CSS
+Options API
+```
 
 ## Project setup
 ```
