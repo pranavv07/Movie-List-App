@@ -15,6 +15,9 @@ Options API
 
 ## Project setup
 ```
+Node version - v14.7.0
+Npm version - 6.14.7
+
 npm install
 ```
 
